@@ -1,4 +1,4 @@
-/* General Styles */
+/* styling for the overall page, added a safari background*/
 body {
     background-color: lightblue;
     font-family: Arial, sans-serif;
@@ -9,9 +9,10 @@ body {
     align-items: center;
     background-image: url(./images/background.png);
     background-size: cover;  /* Make sure the image covers the whole screen */
+    background-position: center; /* Center the background image */
 }
 
-/* Header */
+/* header syling ( welcome to muslims zoo and about )*/
 .header {
     text-align: center;
     color: rgb(58, 145, 11);
@@ -20,7 +21,7 @@ body {
     width: 100%;
 }
 
-/* Button Container */
+/* button container */
 .button-container {
     position: absolute;
     top: 50%;
@@ -39,7 +40,7 @@ body {
     text-align: center;
 }
 
-/* Button */
+/* button itself */
 .btn {
     text-decoration: none;
     background-color: #007bff;
@@ -49,14 +50,14 @@ body {
     font-size: 18px;
     font-weight: bold;
     transition: 0.3s;
-    margin-top: px; /* Space between image and button */
+    margin-top: 10px; /* Space between image and button */
 }
 
 .btn:hover {
     background-color: #0056b3;
 }
 
-/* home animal images */
+/* images for animals on home page */
 .animal-img {
     width: 200px;
     height: 200px;
@@ -64,7 +65,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* Positioning for Four Corners */
+/* animal positioning on home */
 .top-left { top: 30%; left: 30%; }
 .top-right { top: 30%; right: 30%; }
 .bottom-left { bottom: 0; left: 30%; }
