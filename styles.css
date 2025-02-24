@@ -1,0 +1,30 @@
+body {
+    background-color:lightblue;
+    font-family: Arial, sans-serif; /* Change to any font you like */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between buttons */
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
