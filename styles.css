@@ -1,60 +1,71 @@
+/* General Styles */
 body {
     background-color: lightblue;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/background.png);
+    background-size: cover;  /* Make sure the image covers the whole screen */
 }
 
+/* Header */
 .header {
-    position: absolute;
-    top: 20px;
     text-align: center;
-    color: white;
+    color: rgb(58, 145, 11);
     font-size: 40px;
+    margin-top: 20px;
     width: 100%;
 }
 
+/* Button Container */
 .button-container {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
-    height: 100%;
+    height: 80vh;
 }
 
+/* Button Wrapper */
 .btn-wrapper {
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
+/* Button */
 .btn {
     text-decoration: none;
     background-color: #007bff;
     color: white;
     padding: 15px 25px;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
     transition: 0.3s;
+    margin-top: px; /* Space between image and button */
 }
 
 .btn:hover {
     background-color: #0056b3;
 }
 
+/* home animal images */
 .animal-img {
-    width: 80px; /* Adjust the size of the animals */
-    height: 80px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-/* Positioning the buttons in four corners */
-.top-left { top: 20px; left: 20px; }
-.top-right { top: 20px; right: 20px; }
-.bottom-left { bottom: 20px; left: 20px; }
-.bottom-right { bottom: 20px; right: 20px; }
+/* Positioning for Four Corners */
+.top-left { top: 30%; left: 30%; }
+.top-right { top: 30%; right: 30%; }
+.bottom-left { bottom: 0; left: 30%; }
+.bottom-right { bottom: 0%; right: 30%; }
